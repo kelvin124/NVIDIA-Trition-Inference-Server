@@ -364,7 +364,7 @@ class HttpTest(tu.TestResultCollector):
         try:
             error_message = response.json().get("error", "")
             self.assertIn(
-                "request JSON size",
+                "request JSON size of ",
                 error_message,
             )
             self.assertIn(
